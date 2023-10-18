@@ -1,4 +1,7 @@
-import LoginPage from "../src/pages/Login.jsx";
+import LoginPage from "../src/pages/Login";
+import SignUpPage from '../src/pages/SignUpPage';
+import GynecologistLoginPage from "../src/pages/GynecologistLogin";
+
 export {
-    LoginPage,
+    LoginPage, SignUpPage , GynecologistLoginPage
 };
