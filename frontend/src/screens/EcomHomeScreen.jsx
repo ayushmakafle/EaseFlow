@@ -2,7 +2,7 @@ import React from 'react'
 import Products from '../products'
 import{Row,Col} from 'react-bootstrap'
 import ProductScreen from './ProductScreen'
-const HomeScreens = () => {
+const EcomHomeScreen = () => {
   return (
     <>
     <Row>
@@ -18,4 +18,4 @@ const HomeScreens = () => {
   )
 }
 
-export default HomeScreens
+export default EcomHomeScreen
