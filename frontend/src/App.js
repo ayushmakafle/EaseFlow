@@ -5,6 +5,7 @@ import EcomHeader from './components/EcomHeader';
 import EcomHomeScreen from './screens/EcomHomeScreen';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ProductScreen from './screens/ProductScreen';
+import ProductDetails from './screens/ProductDetails';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Container>
           <Routes>
             <Route path="/" Component={EcomHomeScreen} exact/>
+            <Route path='/product/:id' Component={ProductDetails}/>
           </Routes>
         </Container>
       </main>
