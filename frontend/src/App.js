@@ -13,8 +13,7 @@ function App() {
       <main className='my-3'>
         <Container>
           <Routes>
-            <Route path="/" element={<EcomHomeScreen />} />
-            <Route path="post/:id" element={<ProductScreen />} />
+            <Route path="/" Component={EcomHomeScreen} exact/>
           </Routes>
         </Container>
       </main>
