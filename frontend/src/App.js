@@ -14,7 +14,7 @@ function App() {
       <main className='my-3'>
         <Container>
           <Routes>
-            <Route path="/" Component={EcomHomeScreen} exact/>
+             <Route path="/" Component={EcomHomeScreen} exact/>
             <Route path='/product/:id' Component={ProductDetails}/>
           </Routes>
         </Container>
