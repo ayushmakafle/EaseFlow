@@ -1,7 +1,10 @@
 .App {
   text-align: center;
 }
-
+body{
+  
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
