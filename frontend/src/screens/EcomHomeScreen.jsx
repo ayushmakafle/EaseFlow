@@ -4,6 +4,7 @@ import Products from '../products';
 import { Row, Col } from 'react-bootstrap';
 import ProductScreen from './ProductScreen';
 import EcomHeader from '../components/EcomHeader';
+import Navbar from '../components/Navbar';
 
 const EcomHomeScreen = () => {
   const [products, setProducts] = useState([]);
@@ -23,6 +24,7 @@ const EcomHomeScreen = () => {
 
   return (
     <>
+    <Navbar />
     <EcomHeader/>
       <Row>
 

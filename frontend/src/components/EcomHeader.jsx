@@ -7,7 +7,7 @@ const EcomHeader = () => {
     <>
       <Navbar expand="lg" bg="primary" collapseOnSelect>
         <Container className="justify-content-between">
-          <LinkContainer to='/'>
+          <LinkContainer to='/ecommerce'>
             <Navbar.Brand>Products</Navbar.Brand>
           </LinkContainer>
           <Form className="d-flex mx-auto">

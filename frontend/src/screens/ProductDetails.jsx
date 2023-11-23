@@ -23,7 +23,7 @@ const ProductDetails = () => {
 
     return (
         <div>
-            <Link to='/' className='btn-light' style={{ textDecoration: 'none' }}>
+            <Link to='/ecommerce' className='btn-light' style={{ textDecoration: 'none' }}>
                 <i className="fa-solid fa-arrow-left" style={{ fontSize: '1em' }}></i>
                 &nbsp;GO BACK
             </Link>
