@@ -11,7 +11,7 @@ const EcomHomeScreen = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const { data } = await axios.get('/products');
+        const { data } = await axios.get('/api/products');
         setProducts(data);
       } catch (error) {
         console.error('Error fetching products:', error);
