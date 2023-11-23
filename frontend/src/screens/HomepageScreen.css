@@ -3,15 +3,11 @@
     background-color:rgb(224, 127, 222);
     color:black;
 	margin: auto;
-<<<<<<< Updated upstream
     background-color: pink;
-=======
     font-weight: bold;
     border-radius: 5px;
     box-shadow:yellow;
     width: 400px;
-
->>>>>>> Stashed changes
 }
 
 .react-calendar__month-view__days__day {
