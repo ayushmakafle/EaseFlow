@@ -1,14 +1,13 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Calendar from "react-calendar";
-import "./HomepageScreen.css";
+import "./HomepageScreen.css"
 const HomepageScreen = () => {
   return (
     <div>
         <Navbar/>
-        <Calendar
-              
-    />
+        <Calendar/>
+        
 </div>
     
   );

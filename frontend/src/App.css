@@ -30,6 +30,12 @@ body{
 .App-link {
   color: #61dafb;
 }
+.calendar-container {
+  width: 80%; /* Adjust as needed */
+  margin: 0 auto;
+  background-color:red; /* Center the calendar */
+}
+
 
 @keyframes App-logo-spin {
   from {
