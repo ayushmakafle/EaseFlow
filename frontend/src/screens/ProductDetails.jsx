@@ -1,21 +1,25 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';  // Import useParams hook
-import Product from '../products';
+import React, { useState, useEffect } from 'react';
+import { useParams, Link } from 'react-router-dom'; // Import useParams hook
 import { Row, Col, Image, ListGroup, ListGroupItem, Button } from 'react-bootstrap';
 import Rating from '../components/Rating';
-import {Link} from 'react-router-dom';
+import axios from 'axios';
 
 const ProductDetails = () => {
-    // Use useParams hook to get the parameters from the URL
-    const { id } = useParams();
+    const { id } = useParams(); // Use useParams hook to get the 'id' parameter
+    const [product, setProduct] = useState([]);
 
-    // Find the product with the matching id
-    const product = Product.find((p) => p._id === id);
+    useEffect(() => {
+        const fetchProduct = async () => {
+            try {
+                const { data } = await axios.get(`/products/${id}`);
+                setProduct(data);
+            } catch (error) {
+                console.error('Error fetching product:', error);
+            }
+        };
+        fetchProduct();
+    }, [id]);
 
-    // Check if product is not found
-    if (!product) {
-        return <div>Product not found</div>;
-    }
 
     return (
         <div>
