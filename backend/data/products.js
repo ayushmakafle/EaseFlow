@@ -1,6 +1,5 @@
 const products = [
   {
-    _id: '1',
     name: 'pad',
     image: '/images/pad.jpg',
     description:
@@ -13,7 +12,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '2',
     name: 'tampon',
     image: '/images/tampon.jpg',
     description:
@@ -26,7 +24,6 @@ const products = [
     numReviews: 8,
   },
   {
-    _id: '3',
     name: 'menstrual cup',
     image: '/images/cup.jpg',
     description:
@@ -39,7 +36,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '4',
     name: 'menstrual-cup',
     image: '/images/menstrual-cup.jpg',
     description:
@@ -52,7 +48,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '5',
     name: 'paree',
     image: '/images/paree.jpg',
     description: 'pareeeeee',
@@ -64,7 +59,6 @@ const products = [
     numReviews: 10,
   },
   {
-    _id: '6',
     name: 'pad',
     image: '/images/pads.jpg',
     description:
