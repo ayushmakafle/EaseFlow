@@ -6,8 +6,7 @@ const HomepageScreen = () => {
   return (
     <div>
         <Navbar/>
-        <Calendar/>
-        
+        {/* <Calendar/> */}
 </div>
     
   );
