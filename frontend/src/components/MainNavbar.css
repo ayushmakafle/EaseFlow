@@ -1,0 +1,17 @@
+/* Custom styles for Navbar */
+.custom-navbar {
+    background-color: #eb6864; 
+  }
+  
+  .custom-navbar .navbar-brand,
+  .custom-navbar .nav-link {
+    color: #151515; /* Text color */
+    margin:0 20px 0 20px; /* Adjust spacing between links */
+    font-weight: bold; /* Bold text */
+    transition: color 0.3s ease-in-out; /* Smooth color transition */
+  }
+  
+  .custom-navbar .nav-link:hover {
+    color:white; /* Text color on hover */
+  }
+  

@@ -40,9 +40,12 @@ import EcomHeader from './components/EcomHeader';
  import ProductDetails from './screens/ProductDetails';
 
 import HomepageScreen from './screens/HomepageScreen';
+// import { BrowserRouter as Router, Route } from 'react-router-dom';
+
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Moment from 'react-moment';
 import './App.css'; // Ensure the CSS file path is correct
+import { pink } from 'color-name';
 
 function App() {
   const [value, onChange] = useState(new Date());
@@ -68,7 +71,9 @@ function App() {
            
           </Routes>
 
-          <div className="text-center">
+
+
+          <div className="text-center" style={{marginTop:'50px',fontFamily:'Arial,sans-serif',color:'black',fontSize:'20px',fontWeight:'bolder'}}>
             <label htmlFor="cycle">Select your Cycle Length :</label>
             <select 
 		onChange={(e) => cycleValue(e.target.value)} 
@@ -96,13 +101,13 @@ function App() {
  		</select> 
           </div>
 
-          <p className="text-center">Select Your Last Period Start Date from the Calendar</p>
+          <div className="text-center"style={{fontWeight:'bold',marginTop:'20px',marginBottom:'10px'}}>Select Your Last Period Start Date from the Calendar</div>
 
           <div className="d-flex justify-content-center">
             <Calendar onChange={onChange} value={value} className="calendar mt-0" />
           </div>
 
-          <div className="text-center mt-4 p-2">
+          {/* <div className="text-center mt-4 p-2"style={{marginTop:'10px',fontFamily:'Arial,sans-serif',color:'black',fontWeight:'bolder'}}>
             <div className="row">
               <div className="d-flex justify-content-center">
                 <div className="col-md-3 m-3 box">
@@ -119,7 +124,25 @@ function App() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
+          <div className="text-center mt-4 p-2">
+  <div className="row">
+    <div className="d-flex justify-content-center">
+      <div className="col-md-3 m-3 box date-animation">
+        <p className="box" style={{ fontWeight: 'bold' }}>Next Period</p>
+        <Moment format="Do MMMM YYYY" add={{ days: cycleLength - 1 }}>
+          {date}
+        </Moment>
+      </div>
+      <div className="col-md-3 m-3 box date-animation">
+        <p className="box" style={{ fontWeight: 'bold',marginRight:'2' }}>Approximate Ovulation Day</p>
+        <Moment format="Do MMMM YYYY" add={{ days: cycleLength - 1 - 14 }}>
+          {date}
+        </Moment>
+      </div>
+    </div>
+  </div>
+</div>
         </main>
         <footer />
       </div>
@@ -128,8 +151,7 @@ function App() {
   );
 }
 
-export default App;
-
+export default App; 
 
 
 

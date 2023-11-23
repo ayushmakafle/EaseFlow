@@ -35,6 +35,22 @@ body{
   margin: 0 auto;
   background-color:red; /* Center the calendar */
 }
+.box {
+  transition: transform 0.5s ease-in-out;
+  background-color: rgb(224, 198, 197); 
+
+}
+
+.box:hover {
+  transform: scale(1.1);
+  cursor:grab;
+  /* Add other hover styles as needed */
+}
+
+/* Add animation to the date elements */
+.date-animation {
+  animation: fadeInUp 1s ease-out;
+}
 
 
 @keyframes App-logo-spin {
