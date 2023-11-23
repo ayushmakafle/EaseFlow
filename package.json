@@ -16,6 +16,7 @@
     "concurrently": "^8.2.2",
     "convert-source-map": "^2.0.0",
     "debug": "^4.3.4",
+    "dotenv": "^16.3.1",
     "electron-to-chromium": "^1.4.589",
     "escalade": "^3.1.1",
     "escape-string-regexp": "^1.0.5",
@@ -41,7 +42,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon backend/server.js",
     "client": "npm start --prefix frontend",
-    "dev":"concurrently \"npm run server\" \"npm run client\" "
+    "dev": "concurrently \"npm run server\" \"npm run client\" "
   },
   "author": "",
   "license": "ISC"
