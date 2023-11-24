@@ -66,7 +66,6 @@ function App() {
             {/* <Route path="/" element={<HomepageScreen />} /> */}
              <Route path="/" Component={HomepageScreen} exact/>
               <Route path="/ecommerce" Component={EcomHomeScreen} exact/>
-
              <Route path='/product/:id' Component={ProductDetails}/>
            
           </Routes>
