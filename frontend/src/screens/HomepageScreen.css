@@ -36,3 +36,21 @@
   border-radius: 50%;
   /* Add any specific styles for predicted dates of next month */
 }
+.log-button {
+  position: absolute;
+  left: 50%;
+  margin-top: 20px;
+  transform: translateX(-50%);
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.log-button:hover {
+  transform: translateX(-50%) scale(1.1);
+}

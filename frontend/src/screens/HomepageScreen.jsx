@@ -74,12 +74,18 @@ const HomepageScreen = () => {
   React.useEffect(() => {
     calculatePeriodDates(value);
   }, [value]);
+  const handleLogPeriod = () => {
+    console.log('Period/Symptoms logged');
+  };
 
   return (
     <div className="home-page">
       <Navbar />
       <div className="calendar-container">
         <Calendar tileClassName={tileClassName} />
+        <button className="log-button" onClick={handleLogPeriod}>
+          Log period/symptoms
+        </button>
       </div>
       
     </div>
