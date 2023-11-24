@@ -8,7 +8,8 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 const ProductScreen = ({product}) => {
   return (
     <>
-        <Card className='my-3 p-3 rounded'>
+        <div className="p-3 ">
+            <Card className='my-3 p-3 rounded'>
             <a href={`/product/${product._id}`}> 
                 <Card.Img src={product.image} variant='top'/>
             </a>
@@ -26,6 +27,7 @@ const ProductScreen = ({product}) => {
             </Card.Text>
         </Card.Body>
         </Card> 
+    </div>
     </>
   )
 }
