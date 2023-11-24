@@ -106,25 +106,6 @@ function App() {
           <div className="d-flex justify-content-center">
             <Calendar onChange={onChange} value={value} className="calendar mt-0" />
           </div>
-
-          {/* <div className="text-center mt-4 p-2"style={{marginTop:'10px',fontFamily:'Arial,sans-serif',color:'black',fontWeight:'bolder'}}>
-            <div className="row">
-              <div className="d-flex justify-content-center">
-                <div className="col-md-3 m-3 box">
-                  <p>Next Period</p>
-                  <Moment format="Do MMMM YYYY" add={{ days: cycleLength - 1 }}>
-                    {date}
-                  </Moment>
-                </div>
-                <div className="col-md-3 m-3 box">
-                  <p>Approximate Ovulation Day</p>
-                  <Moment format="Do MMMM YYYY" add={{ days: cycleLength - 1 - 14 }}>
-                    {date}
-                  </Moment>
-                </div>
-              </div>
-            </div>
-          </div> */}
           <div className="text-center mt-4 p-2">
   <div className="row">
     <div className="d-flex justify-content-center">
