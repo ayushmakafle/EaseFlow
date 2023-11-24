@@ -38,7 +38,9 @@ import EcomHomeScreen from './screens/EcomHomeScreen';
 import EcomHeader from './components/EcomHeader'; 
  import ProductScreen from './screens/ProductScreen';
  import ProductDetails from './screens/ProductDetails';
-
+import LoginPage from './screens/LoginPage';
+import GynecologistLoginPage from './screens/GynecologistLoginPage';
+import GynecologistSignUpPage from './screens/GynecologistSignUpPage';
 import HomepageScreen from './screens/HomepageScreen';
 // import { BrowserRouter as Router, Route } from 'react-router-dom';
 
@@ -63,6 +65,9 @@ function App() {
       <div className="app-wrapper">
         <main className="content">
           <Routes>
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/gynecologistLogin" element={<GynecologistLoginPage />} />
+        <Route path="/gynecologistSignUp" element={<GynecologistSignUpPage />} />
             {/* <Route path="/" element={<HomepageScreen />} /> */}
              <Route path="/" Component={HomepageScreen} exact/>
               <Route path="/ecommerce" Component={EcomHomeScreen} exact/>
