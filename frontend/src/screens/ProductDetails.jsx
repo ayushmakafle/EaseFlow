@@ -4,6 +4,8 @@ import { useParams, Link } from 'react-router-dom'; // Import useParams hook
 import { Row, Col, Image, ListGroup, ListGroupItem, Button } from 'react-bootstrap';
 import Rating from '../components/Rating';
 import axios from 'axios';
+import EcomHeader from '../components/EcomHeader';
+import Navbar from '../components/Navbar';
 
 const ProductDetails = () => {
     const { id } = useParams(); // Use useParams hook to get the 'id' parameter
@@ -24,6 +26,8 @@ const ProductDetails = () => {
 
     return (
         <div>
+            <Navbar />
+            <EcomHeader />
             <Link to='/ecommerce' className='btn-light' style={{ textDecoration: 'none' }}>
                 <i className="fa-solid fa-arrow-left" style={{ fontSize: '1em' }}></i>
                 &nbsp;GO BACK
