@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap';
 import 'react-calendar/dist/Calendar.css';
 
 import Footer from './components/footer';
-import Navbar from './components/Navbar';
+// import Navbar from './components/Navbar';
 import HomepageScreen from './screens/HomepageScreen'
 import EcomHeader from './components/EcomHeader'; 
 import EcomHomeScreen from './screens/EcomHomeScreen';
@@ -22,7 +22,7 @@ function App() {
             <Route path='/product/:id' Component={ProductDetails}/>
           </Routes>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </Router>
   );
 }
