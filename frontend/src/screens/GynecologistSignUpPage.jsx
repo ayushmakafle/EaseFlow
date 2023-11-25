@@ -2,7 +2,7 @@ import React from 'react'
 import GynecologistSignUp  from '../components/GynecologistSignUp';
 const GynecologistSignUpPage = () => {
   return (
-    <div>
+    <div className='w-full h-screen bg-gray-50'>
       <GynecologistSignUp />
     </div>
   )
