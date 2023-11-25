@@ -50,8 +50,6 @@ const ProductDetails = () => {
 
     return (
         <div>
-            <Navbar />
-            <EcomHeader />
             <Link to='/ecommerce' className='btn-light' style={{ textDecoration: 'none' }}>
                 <i className="fa-solid fa-arrow-left" style={{ fontSize: '1em' }}></i>
                 &nbsp;GO BACK

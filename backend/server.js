@@ -2,7 +2,6 @@ const morgan = require('morgan');
 const authRoutes = require('./routes/authRoute');
 
 const express = require('express');
-const {errorHandler} = require('./middlewares/errorMiddleware');
 const products = require('./data/products');
 const dotenv = require('dotenv'); 
 const mongoose = require('mongoose');
@@ -28,8 +27,6 @@ app.get('/', (req, res) => {
 
 app.use('/api',productRoutes)
 app.use('/api',CategoryRoutes)
-
-app.use(errorHandler);
 
 const PORT = process.env.PORT || 8080; // Use the port from environment variables or default to 8080
     app.listen(PORT, () => {

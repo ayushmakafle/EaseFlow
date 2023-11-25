@@ -5,7 +5,7 @@ import './MainNavbar.css'; // Import the CSS file for Navbar styling
 const MainNavbar = () => {
   return (
     <Navbar expand="lg" variant="dark" className="custom-navbar">
-      <Navbar.Brand href="/">Ease Flow</Navbar.Brand>
+      <Navbar.Brand href="#home">Ease Flow</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">

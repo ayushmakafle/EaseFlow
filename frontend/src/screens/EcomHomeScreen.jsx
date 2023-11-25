@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Products from '../products';
+//import Products from '../product';
 import { Row, Col } from 'react-bootstrap';
 import ProductScreen from './ProductScreen';
 import EcomHeader from '../components/EcomHeader';
