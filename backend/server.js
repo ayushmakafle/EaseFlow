@@ -1,3 +1,6 @@
+const morgan = require('morgan');
+const authRoutes = require('./routes/authRoute');
+
 const express = require('express');
 const {errorHandler} = require('./middlewares/errorMiddleware');
 const products = require('./data/products');
@@ -7,17 +10,24 @@ const connectDB = require('./config/config');
 const { green } = require('color-name');
 require('colors'); //for terminal
 const productRoutes = require('./routes/productsRoute');
+const { Category } = require('./models/Category');
+const CategoryRoutes = require('./routes/categoryRoutes');
 
 
 dotenv.config();
 connectDB();
 const app = express();
+app.use(express.json());
+app.use(morgan('dev'));
+
+app.use('/api/auth',authRoutes)
 
 app.get('/', (req, res) => { 
     res.send('<h1> Welcome to the Node server </h1>');
 });
 
 app.use('/api',productRoutes)
+app.use('/api',CategoryRoutes)
 
 app.use(errorHandler);
 

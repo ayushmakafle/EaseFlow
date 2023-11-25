@@ -35,8 +35,10 @@ const productSchema = mongoose.Schema({
         required: true,
     },
     category: {
-        type: String,
+         type: String,
         required: true,
+        //type: mongoose.Schema.Types.ObjectId,
+        //red:'categories'
     },
     description: {
         type: String,
